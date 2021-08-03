@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Password Generator</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <div class="form">
-            <div class="logo"></div>
-            <div class="title">Password Generator</div>
-            <div class="sub-title">Create a secure password</div>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Password Generator</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="form">
+      <div class="logo"></div>
+      <div class="title">Password Generator</div>
+      <div class="sub-title">Create a secure password</div>
 
-            <div class="password-holder">
-                <div class="password">
-                    <input type="password" class="pass-input" placeholder="jkskkdlflss" disabled>
-                </div>
-            </div>
-            <div class="btn">
-                <button class="generate">Generate</button>
-            </div>
-           
-            <!-- <button class="copy">Copy Password</button> -->
+      <div class="password-holder">
+        <div class="password">
+          <input
+            type="text"
+            id="password-input"
+            class="pass-input"
+            placeholder="jkskkdlflss"
+            disabled
+          />
         </div>
-        <script src="scripts/app.js" async defer></script>
-    </body>
+      </div>
+      <div class="btn">
+        <button id="generate" class="generate">Generate</button>
+      </div>
+
+      <!-- <button class="copy">Copy Password</button> -->
+    </div>
+    <script src="scripts/app.js" async defer></script>
+  </body>
 </html>
