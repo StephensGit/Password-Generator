@@ -8,30 +8,12 @@ let copyBtn = document.querySelector('#copy');
 let copyBtn1 = document.querySelector('#copy1');
 
 generateBtn.addEventListener('click', () => {
-  // set chars
-  let chars =
-    '0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  // This will eventually change with a slider input
-  let passwordLength = 12;
-  let password = '';
-  for (let i = 0; i <= passwordLength; i++) {
-    let randomNumber = Math.floor(Math.random() * chars.length);
-    console.log(randomNumber);
-    password += chars.substring(randomNumber, randomNumber + 1);
-  }
-  passwordInput.value = password;
+  const newPassword = new Password('12');
+  passwordInput.value = newPassword.generatePassword();
 });
 
 copyBtn.addEventListener('click', function () {
   let input = copyText.querySelector('#pass-input');
-  console.log(input.value);
-  input.select();
-  document.execCommand('copy');
-  // window.getSelection().removeAllRanges();
-});
-copyBtn1.addEventListener('click', function () {
-  let input = copyText.querySelector('#pass-input');
-  console.log(input.value);
   input.select();
   document.execCommand('copy');
   // window.getSelection().removeAllRanges();
