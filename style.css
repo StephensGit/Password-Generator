@@ -55,6 +55,9 @@ body {
   padding: 20px 10px 20px 5px;
 }
 .password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 30px;
   border-radius: 25px;
   box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
@@ -62,12 +65,8 @@ body {
 
 .btn {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-}
-
-button {
-  /* margin-left: auto; */
 }
 
 .generate,
@@ -75,23 +74,59 @@ button {
   outline: none;
   border: none;
   cursor: pointer;
-  width: 60%;
+  width: 60px;
   height: 60px;
-  border-radius: 30px;
+  border-radius: 100%;
   font-size: 20px;
   font-weight: 700;
   font-family: 'Lato', sans-serif;
   color: #fff;
   text-align: center;
-  background: #24cfaa;
+  background: #ecf0f3;
   /* neomrphic effect using shadow */
   box-shadow: 3px 3px 3px #b1b1b1, -3px -3px 8px #ffffff;
   transition: 0.5s;
 }
 
-.generate:hover {
-  background: #2fdbb6;
+.generate:hover,
+.copy:hover {
+  background: #ecf0f3;
 }
-.generate:active {
-  background: #1da88a;
+.generate:active,
+.copy:active {
+  background: #ecf0f3;
+}
+
+button {
+  margin-right: 20px;
+  background: transparent;
+  border: none;
+  height: 35px;
+  width: 28px;
+  box-shadow: inset 3px 3px 3px #b1b1b1, inset -3px -3px 8px #ffffff;
+  border-radius: 8px;
+}
+button:hover {
+  transition: 0.02s;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+  /* box-shadow: inset -3px -3px -3px #b1b1b1, inset 8px 8px -8px #ffffff; */
+}
+
+.img {
+  position: relative;
+  right: 2px;
+  height: 20px;
+  width: 20px;
+  background: transparent;
+}
+
+.img:hover {
+  /* opacity: 0.5; */
+  position: relative;
+  right: 2px;
+  height: 20px;
+  width: 20px;
+  background: transparent;
+  /* box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff; */
+  border-radius: 20%;
 }

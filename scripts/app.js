@@ -1,8 +1,11 @@
 // Get a hold of the input element to display the generated code
 // Get a hold of the button element to invoke the function to generate a new password
 
-let passwordInput = document.getElementById('password-input');
-let generateBtn = document.getElementById('generate');
+let passwordInput = document.querySelector('.pass-input');
+let generateBtn = document.querySelector('#generate');
+let copyText = document.querySelector('.password');
+let copyBtn = document.querySelector('#copy');
+let copyBtn1 = document.querySelector('#copy1');
 
 generateBtn.addEventListener('click', () => {
   // set chars
@@ -17,4 +20,19 @@ generateBtn.addEventListener('click', () => {
     password += chars.substring(randomNumber, randomNumber + 1);
   }
   passwordInput.value = password;
+});
+
+copyBtn.addEventListener('click', function () {
+  let input = copyText.querySelector('#pass-input');
+  console.log(input.value);
+  input.select();
+  document.execCommand('copy');
+  // window.getSelection().removeAllRanges();
+});
+copyBtn1.addEventListener('click', function () {
+  let input = copyText.querySelector('#pass-input');
+  console.log(input.value);
+  input.select();
+  document.execCommand('copy');
+  // window.getSelection().removeAllRanges();
 });
