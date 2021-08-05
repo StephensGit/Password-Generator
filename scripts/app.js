@@ -5,10 +5,17 @@ let passwordInput = document.querySelector('.pass-input');
 let generateBtn = document.querySelector('#generate');
 let copyText = document.querySelector('.password');
 let copyBtn = document.querySelector('#copy');
-let copyBtn1 = document.querySelector('#copy1');
+let slider = document.querySelector('#myRange');
+let sliderValue = 12;
+
+slider.addEventListener('change', () => {
+  sliderValue = slider.value;
+  console.log(sliderValue);
+  return sliderValue;
+});
 
 generateBtn.addEventListener('click', () => {
-  const newPassword = new Password('12');
+  const newPassword = new Password(sliderValue);
   passwordInput.value = newPassword.generatePassword();
 });
 
