@@ -1,6 +1,6 @@
 # Password Generator
 
-This is an application I developed that allows the user to create a password using a generator tool encorporating Neumorphic design. 
+This is an application I developed that allows the user to create a random password using a generator tool encorporating Neumorphic design. 
 I use lastpass [https://www.lastpass.com/features/password-generator] on a weekly basis for work, so I decided it would be fun to build a basic version of my own and also design it using Neumorphic design. While the application is rather basic, I was just curious about how to create neumorphic design using css.
 
 ## Table of contents
@@ -33,11 +33,11 @@ The challenge is to design a password generator tool encorporating Neumorphic de
 - Semantic HTML5 markup
 - CSS variables
 - Flexbox
+- Javascript
 - ES6 Classes
 
 ## Author
 
-- Website - [Stephen Moran](https://www.stephenmoran.ie)
 - Linkedin - [Stephen Moran](https://www.linkedin.com/in/stephen-moran-/)
 - Github - [StephensGit](https://github.com/StephensGit)
 
